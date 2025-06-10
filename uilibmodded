@@ -860,7 +860,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.CheckedFrame = Instance.new("Frame", toggle.Main)
                 toggle.CheckedFrame.ZIndex = 5
                 toggle.CheckedFrame.BorderSizePixel = 0
-                toggle.CheckedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Color3.fromRGB(204, 0, 102)
+                toggle.CheckedFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20) -- Color3.fromRGB(20, 20, 20)
                 toggle.CheckedFrame.Size = toggle.Main.Size
 
                 toggle.Gradient2 = Instance.new("UIGradient", toggle.CheckedFrame)
@@ -1006,7 +1006,7 @@ function library:CreateWindow(name, size, hidebutton)
     
                     dropdown.Main = Instance.new("TextButton", sector.Items)
                     dropdown.Main.Name = "dropdown"
-                    dropdown.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    dropdown.Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
                     dropdown.Main.BorderSizePixel = 0
                     dropdown.Main.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 16)
                     dropdown.Main.Position = UDim2.fromOffset(0, 0)
@@ -1014,7 +1014,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.Main.AutoButtonColor = false
                     dropdown.Main.Font = window.theme.font
                     dropdown.Main.Text = ""
-                    dropdown.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    dropdown.Main.TextColor3 = Color3.fromRGB(20, 20, 20)
                     dropdown.Main.TextSize = 15
                     dropdown.Main.TextXAlignment = Enum.TextXAlignment.Left
                     updateevent.Event:Connect(function(theme)
