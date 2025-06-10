@@ -19,14 +19,14 @@ local mouse = player:GetMouse()
 local camera = game.Workspace.CurrentCamera
 
 library.theme = {
-    fontsize = 15,
-    titlesize = 18,
+    fontsize = 16,
+    titlesize = 24,
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
     tilesize = 90,
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
-    backgroundcolor = Color3.fromRGB(128, 128, 128),
+    backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(255, 250, 250),
     bordercolor = Color3.fromRGB(128, 128, 128),
     accentcolor = Color3.fromRGB(28, 56, 139),
