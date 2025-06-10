@@ -33,9 +33,9 @@ library.theme = {
     accentcolor2 = Color3.fromRGB(16, 31, 78),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
-    sectorcolor = Color3.fromRGB(30, 30, 30),
     toptextcolor = Color3.fromRGB(255, 250, 250),
     topheight = 48,
+    sectorcolor = Color3.fromRGB(30, 30, 30),
     topcolor = Color3.fromRGB(30, 30, 30),
     topcolor2 = Color3.fromRGB(30, 30, 30),
     buttoncolor = Color3.fromRGB(49, 49, 49),
@@ -119,7 +119,7 @@ function library:CreateWatermark(name, position)
 
     watermark.label = Instance.new("TextLabel", watermark.mainbar)
     watermark.label.Name = "FPSLabel"
-    watermark.label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    watermark.label.BackgroundColor3 = Color3.fromRGB()
     watermark.label.BackgroundTransparency = 1.000
     watermark.label.Position = UDim2.new(0, 0, 0, 0)
     watermark.label.Size = UDim2.new(0, 238, 0, 25)
@@ -334,7 +334,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.TopBar.Name = "top"
     window.TopBar.Size = UDim2.fromOffset(window.size.X.Offset, window.theme.topheight)
     window.TopBar.BorderSizePixel = 0
-    window.TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    window.TopBar.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     window.TopBar.InputBegan:Connect(dragstart)
     window.TopBar.InputChanged:Connect(dragend)
     updateevent.Event:Connect(function(theme)
