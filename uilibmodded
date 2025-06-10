@@ -676,7 +676,7 @@ function library:CreateWindow(name, size, hidebutton)
                 button.Main.Name = "button"
                 button.Main.ZIndex = 5
                 button.Main.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 14)
-                button.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                button.Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 
                 button.Gradient = Instance.new("UIGradient", button.Main)
                 button.Gradient.Rotation = 90
