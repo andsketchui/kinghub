@@ -1349,7 +1349,7 @@ function library:CreateWindow(name, size, hidebutton)
                     textbox.Holder.ZIndex = 5
                     textbox.Holder.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 14)
                     textbox.Holder.BorderSizePixel = 0
-                    textbox.Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    textbox.Holder.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     
                     textbox.Gradient = Instance.new("UIGradient", textbox.Holder)
                     textbox.Gradient.Rotation = 90
@@ -1367,7 +1367,7 @@ function library:CreateWindow(name, size, hidebutton)
                     textbox.Main.TextScaled = true
                     textbox.Main.Size = textbox.Holder.Size
                     textbox.Main.TextSize = 15
-                    textbox.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    textbox.Main.TextColor3 = Color3.fromRGB(20, 20, 20)
                     textbox.Main.BorderSizePixel = 0
                     textbox.Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
                     textbox.Main.TextXAlignment = Enum.TextXAlignment.Left
@@ -1449,14 +1449,14 @@ function library:CreateWindow(name, size, hidebutton)
                     local colorpicker = { }
 
                     colorpicker.callback = callback or function() end
-                    colorpicker.default = default or Color3.fromRGB(255, 255, 255)
+                    colorpicker.default = default or Color3.fromRGB(20, 20, 20)
                     colorpicker.value = colorpicker.default
                     colorpicker.flag = flag or ( (toggle.text or "") .. tostring(#toggle.Items:GetChildren()))
 
                     colorpicker.Main = Instance.new("Frame", toggle.Items)
                     colorpicker.Main.ZIndex = 6
                     colorpicker.Main.BorderSizePixel = 0
-                    colorpicker.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    colorpicker.Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
                     colorpicker.Main.Size = UDim2.fromOffset(16, 10)
 
                     colorpicker.Gradient = Instance.new("UIGradient", colorpicker.Main)
@@ -1605,7 +1605,7 @@ function library:CreateWindow(name, size, hidebutton)
                     colorpicker.pointer.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     colorpicker.pointer.Position = UDim2.new(0,0,0,0)
                     colorpicker.pointer.Size = UDim2.new(0,2,0,10)
-                    colorpicker.pointer.BorderColor3 = Color3.fromRGB(255, 255, 255)
+                    colorpicker.pointer.BorderColor3 = Color3.fromRGB(20, 20, 20)
 
                     if colorpicker.flag and colorpicker.flag ~= "" then
                         library.flags[colorpicker.flag] = colorpicker.default
